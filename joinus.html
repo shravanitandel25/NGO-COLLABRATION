@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Join Us - NGO Collaboration Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+form {
+    text-align: left;
+}
+</style>
+
+<script>
+function validateForm() {
+  let name = document.forms["myForm"]["name"].value.trim();
+
+  if (name === "") {
+    alert("Name must be filled out");
+    return false;
+  }
+
+  alert("Registration successfully!");
+  return true;
+}
+</script>
+
+<body>
+ 
+<header class="top-bar">
+<div class="logo">NGO Collaboration Hub</div>
+<nav class="nav-links">
+<a href="index.html">Home</a>
+<a href="ngos.html">NGOs</a>
+<a href="workshops.html">Workshops & Events</a>
+<a href="sdg17.html">SDG Goal 17</a>
+<a href="donation.html">Donation</a>
+<a class="active" href="joinus.html">Join Us</a>
+</nav>
+</header>
+ 
+<section class="banner" style="background-image:url(https://images.pexels.com/photos/12102716/pexels-photo-12102716.jpeg);">
+<div class="banner-text">
+<h1>Join us</h1>
+<p>Be the hero world needs.</p>
+<p>+919373784832 <br> Ngocollabration@gmail.com.</p>
+</div>
+</section>
+ 
+<main>
+
+<div class="section-title">
+<h2>contact us</h2>
+
+<form name="myForm" onsubmit="return validateForm()">
+<label style="text-align:left;">NAME:</label><br>
+<input type="text" id="name" name="name"  required
+placeholder="Enter your name here"
+style="width:100%; padding:8px; margin:6px 0 12px; border-radius:4px; border:1px solid #aaa;">
+
+<label>Email</label><br>
+<input type="email" name="email" required
+placeholder="Enter your E-mail here"
+style="width:100%; padding:8px; margin:6px 0 12px; border-radius:4px; border:1px solid #aaa;">
+
+<label>Number</label><br>
+<input type="number" name="phone"
+placeholder="Enter your Number here"
+ required
+style="width:100%; padding:8px; margin:6px 0 12px; border-radius:4px; border:1px solid #aaa;">
+
+ <label>Messege for us</label><br>
+<input type="text" name="payment"
+placeholder="Enter your message here"
+required
+style="width:100%; padding:8px; margin:6px 0 18px; border-radius:4px; border:1px solid #aaa;">
+<button type="submit" class="btn">Submit</button>
+</form>
+ 
+</div>
+
+</main>
+ 
+<footer>
+© 2025 NGO Collaboration Hub. All rights reserved.
+</footer>
+ 
+</body>
+</html>
